@@ -17,7 +17,7 @@ deploy: # 배포
     secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
     bucket: jeffchoi-ci-cd-tutorial # S3에 생성한 버킷
     region: ap-northeast-2
-    skip_cleanup: true 
+    skip_cleanup: true
     local_dir: deploy # deploy 디렉터리에 있는 파일을 s3로 업로드 하겠다는 의미
     wait-until-deployed: true
     on:
@@ -39,4 +39,4 @@ deploy: # 배포
 notifications:
   email:
     recipients:
-      - dev.jeffchoi@gmail.com
+      - yoteamo7@naver.com
